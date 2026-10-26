@@ -1,0 +1,25 @@
+{
+  "name": "burnout",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "check:maps": "esbuild scripts/check-maps.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/check-maps.mjs && node node_modules/.cache/check-maps.mjs",
+    "smoke": "esbuild scripts/smoke.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/smoke.mjs --banner:js=\"import{createRequire}from'module';const require=createRequire(import.meta.url);\" && node node_modules/.cache/smoke.mjs",
+    "smoke:arcade": "esbuild scripts/arcade-smoke.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/arcade-smoke.mjs --banner:js=\"import{createRequire}from'module';const require=createRequire(import.meta.url);\" && node node_modules/.cache/arcade-smoke.mjs",
+    "smoke:flow": "esbuild scripts/flow-smoke.ts --bundle --platform=node --format=esm --log-level=warning --outfile=node_modules/.cache/flow-smoke.mjs --banner:js=\"import{createRequire}from'module';const require=createRequire(import.meta.url);\" && node node_modules/.cache/flow-smoke.mjs"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "happy-dom": "^15.11.7",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

@@ -1,0 +1,559 @@
+{
+  "chaos": {
+    "start": 10,
+    "regenPerSec": 1.5,
+    "max": 40,
+    "bonusPerHeroDamage": 0.3,
+    "carryOver": [
+      10,
+      20
+    ]
+  },
+  "week": {
+    "durationSec": 30
+  },
+  "debts": {
+    "perPlayableWeeks": 3,
+    "fullSemesterLimit": 5,
+    "curatedLimit": 3
+  },
+  "stress": {
+    "base": 5,
+    "perMeter10pct": 1,
+    "perDebt": 8,
+    "perUnspentChaos": 0.25,
+    "holiday": 5
+  },
+  "break": {
+    "reroll": 2,
+    "upgradeL2": 6,
+    "upgradeL3": 12,
+    "loadoutSlots": 3
+  },
+  "stamps": {
+    "burnoutBase": 10,
+    "perWeekLeft": 2,
+    "graduatedBase": 4,
+    "perDebt": 2,
+    "perYear": 0.25
+  },
+  "kirill": {
+    "sanity": 100,
+    "sanityWeek1": 60,
+    "regenPerSec": 1,
+    "speed": 3.0,
+    "pickupRadius": 3,
+    "beam": {
+      "interval": 0.45,
+      "intervalWeek1": 0.8,
+      "damage": 1,
+      "range": 6
+    },
+    "xp": {
+      "firstLevel": 5,
+      "growth": 1.35
+    },
+    "scaling": {
+      "perWeek": 0.06,
+      "perYear": 0.2
+    }
+  },
+  "cards": {
+    "popQuiz": {
+      "cost": 1,
+      "hp": 1,
+      "speed": 2.6,
+      "touchDmg": 3,
+      "pile": 0.5
+    },
+    "deadline": {
+      "cost": 3,
+      "hp": 2,
+      "speed": 3.8,
+      "touchDmg": 12,
+      "pile": 1.5,
+      "blastRadius": 1.8
+    },
+    "pasha": {
+      "cost": 5,
+      "lifeSec": 12,
+      "beatEverySec": 3,
+      "beatStunSec": 1,
+      "fireRateMul": 0.7,
+      "regenMul": 0.5,
+      "beatRadius": 4.5
+    },
+    "partner": {
+      "cost": 4,
+      "hp": 5,
+      "speed": 1.1,
+      "slow": 0.4,
+      "drainPerSec": 1.5,
+      "pile": 1
+    },
+    "guard": {
+      "cost": 3,
+      "lifeSec": 14,
+      "stopSec": 2,
+      "cooldownSec": 6,
+      "dmg": 4,
+      "radius": 1.6
+    },
+    "medBall": {
+      "cost": 3,
+      "hp": 3,
+      "speed": 1.8,
+      "touchDmg": 10,
+      "knockback": 1.2,
+      "pile": 1
+    },
+    "ticket": {
+      "cost": 2
+    }
+  },
+  "weekUnits": {
+    "drawing": {
+      "cost": 2,
+      "hp": 3,
+      "speed": 1.6,
+      "pile": 1
+    },
+    "gost": {
+      "cost": 4,
+      "hp": 4,
+      "auraRadius": 3,
+      "drawingDamageTaken": 0.5,
+      "lifeSec": 16
+    },
+    "volley": {
+      "cost": 1,
+      "speed": 5,
+      "bounces": 3,
+      "touchDmg": 4
+    },
+    "envelope": {
+      "drainPerSec": 2
+    },
+    "test": {
+      "addsTests": 10,
+      "solvedRemoves": 18
+    }
+  },
+  "guests": {
+    "romchik": {
+      "lifeSec": 12,
+      "speed": 6,
+      "grabSec": 2
+    },
+    "sonya": {
+      "lifeSec": 12,
+      "pullRadius": 5,
+      "pull": 1.6,
+      "fans": 6,
+      "fanSlow": 0.3
+    },
+    "masha": {
+      "lifeSec": 14,
+      "gossipRadius": 4
+    },
+    "grisha": {
+      "chancePerWeek": 0.3,
+      "speed": 0.9,
+      "triggerRadius": 1.5,
+      "jokeHeal": 10,
+      "yawnSec": 2
+    }
+  },
+  "bosses": {
+    "nina": {
+      "actionEverySec": 7,
+      "fitnessTestChance": 0.5,
+      "circles": 3,
+      "testSec": 6,
+      "testFailDmg": 15,
+      "ballSpeed": 4.2
+    },
+    "finalExam": {
+      "shockwaveEverySec": 4.5,
+      "shockwaveDmg": 10,
+      "ringSpeed": 3.4
+    }
+  },
+  "weeks": {
+    "2": {
+      "pileLimit": 10
+    },
+    "15": {
+      "tests": 200,
+      "maxTestsOnMap": 6,
+      "testSpawnSec": 1.2
+    }
+  },
+  "weekRules": {
+    "leaves": {
+      "hitToBuried": 2,
+      "mapleLife": 18,
+      "mapleRate": 2,
+      "rakeEvery": 0.6,
+      "rakeRadius": 2.2,
+      "perLeaf": 0.9,
+      "decay": 5
+    },
+    "fees": {
+      "wallet": 150,
+      "hitFactor": 1.5,
+      "coinEvery": 2.5,
+      "coinValue": 12,
+      "annualFee": 20,
+      "mashaDrain": 1.5
+    },
+    "attestation": {
+      "beamRange": 3.2,
+      "debtAt": 4,
+      "startTasks": 12,
+      "taskSpeed": 2.3,
+      "fleeWithin": 5
+    },
+    "canteen": {
+      "hitFactor": 0.8,
+      "queueLife": 12,
+      "hungerPerSec": 2.2,
+      "foodEvery": 2,
+      "foodValue": 22
+    },
+    "parking": {
+      "speedMul": 0.75,
+      "towSec": 2
+    },
+    "blackout": {
+      "hitToLab": 0.5,
+      "lowBattery": 20,
+      "chargePerSec": 30,
+      "workPerSec": 3.0,
+      "drainPerSec": 2.8,
+      "fuseLife": 20,
+      "fuseRadius": 5
+    },
+    "deans": {
+      "speedMul": 0.55,
+      "noisePerDmg": 1.2,
+      "range": 10,
+      "halfAngle": 0.42,
+      "sweepSpeed": 0.6,
+      "sweep": 1.1,
+      "seenPerSec": 40,
+      "decayPerSec": 25
+    },
+    "assembly": {
+      "speedMul": 0.45,
+      "duration": 70,
+      "minutesPerSec": 1.5,
+      "minutesPerDmg": 0.6,
+      "speechEvery": 8,
+      "actEvery": 8,
+      "followerSec": 8
+    },
+    "absences": {
+      "limit": 10,
+      "registerEvery": 2
+    },
+    "newYear": {
+      "hitToPrep": 0.4,
+      "garlandRadius": 2.2,
+      "olivierEat": 3,
+      "tangerineEat": 1,
+      "prepPerSec": 5.4
+    },
+    "credits": {
+      "beamRange": 4.5,
+      "debtAbove": 3,
+      "start": 6
+    },
+    "exams": {
+      "beamRange": 4
+    }
+  },
+  "skillCooldowns": {
+    "wrongDoor": 15,
+    "lectureDrone": 12,
+    "ninasWhistle": 14,
+    "windGust": 12,
+    "annualFee": 14,
+    "extraVariant": 14,
+    "outOfCutlets": 15,
+    "barrier": 14,
+    "powerCut": 16,
+    "kettleBoils": 14,
+    "encore": 16,
+    "rollCall": 12,
+    "chimes": 15,
+    "retake": 15,
+    "everythingAtOnce": 20
+  },
+  "allies": {
+    "artem": {
+      "arrivesSec": [
+        8,
+        22
+      ],
+      "speed": 2.3,
+      "slowPerNearbyUnit": 0.55,
+      "heal": 25,
+      "pileRemove": 3
+    },
+    "shady": {
+      "arrivesSec": [
+        6,
+        26
+      ]
+    }
+  },
+  "abilities": {
+    "email": {
+      "stunSec": 1.5,
+      "cooldown": 10
+    },
+    "fireAlarm": {
+      "panicSec": 3,
+      "cooldown": 12
+    }
+  },
+  "duel": {
+    "roundSec": 25,
+    "arena": 5.4,
+    "walkSpeed": 3.2,
+    "blockFactor": 0.2,
+    "hitstun": 0.3,
+    "jumpV": 8.6,
+    "gravity": 26,
+    "dashSpeed": 11,
+    "dashSec": 0.2,
+    "downSec": 0.85,
+    "comboScale": 0.12,
+    "punch": {
+      "windup": 0.08,
+      "active": 0.1,
+      "recovery": 0.2,
+      "range": 1.35,
+      "dmg": 7,
+      "knock": 0.3
+    },
+    "kick": {
+      "windup": 0.17,
+      "active": 0.12,
+      "recovery": 0.32,
+      "range": 1.8,
+      "dmg": 12,
+      "knock": 0.7
+    },
+    "specials": {
+      "nina": {
+        "windup": 0.3,
+        "active": 0.05,
+        "recovery": 0.35,
+        "range": 0,
+        "dmg": 17,
+        "knock": 1.4
+      },
+      "dean": {
+        "windup": 0.5,
+        "active": 0.12,
+        "recovery": 0.5,
+        "range": 2.5,
+        "dmg": 22,
+        "knock": 1.7
+      },
+      "finalExam": {
+        "windup": 0.35,
+        "active": 0.05,
+        "recovery": 0.4,
+        "range": 0,
+        "dmg": 8,
+        "knock": 0.6
+      },
+      "kirill": {
+        "windup": 0.25,
+        "active": 0.05,
+        "recovery": 0.3,
+        "range": 0,
+        "dmg": 10,
+        "knock": 0.8
+      },
+      "romchik": {
+        "windup": 0.22,
+        "active": 0.12,
+        "recovery": 0.42,
+        "range": 1.5,
+        "dmg": 16,
+        "knock": 1.5
+      }
+    },
+    "specialGain": {
+      "hit": 22,
+      "taken": 10
+    },
+    "ai": {
+      "thinkEvery": 0.13,
+      "blockChance": 0.42,
+      "aggression": 0.58
+    }
+  },
+  "combo": {
+    "window": 2.0,
+    "dmgPerStep": 0.1,
+    "maxBonus": 1.0,
+    "chaosPerStep": 0.5,
+    "stressPer": 4
+  },
+  "allNighter": {
+    "charge": 1.3,
+    "radius": 4.5,
+    "heal": 15,
+    "buffSec": 6,
+    "speedMul": 1.35,
+    "fireMul": 1.5,
+    "at": 0.7
+  },
+  "arcade": {
+    "fight": {
+      "ladder": [
+        {
+          "ai": 0.8,
+          "power": 1.0,
+          "hp": 0.9
+        },
+        {
+          "ai": 1.1,
+          "power": 1.15,
+          "hp": 1.0
+        },
+        {
+          "ai": 1.45,
+          "power": 1.35,
+          "hp": 1.0
+        }
+      ]
+    },
+    "race": {
+      "length": 400,
+      "normSec": 51,
+      "ninaSpeed": 7.0,
+      "kirillSpeed": 7.7,
+      "jumpV": 9,
+      "firstHurdle": 30,
+      "hurdleGap": [22, 34],
+      "kirillTrip": 0.12,
+      "stumbleSec": 0.6,
+      "staminaRegen": 6,
+      "sprintCost": 45,
+      "sprintSec": 1.5,
+      "whistleCd": 8,
+      "whistleStun": 1.3,
+      "tauntCd": 3,
+      "flusterSec": 2.5,
+      "flusterSlow": 0.35,
+      "angerWindow": 8,
+      "angerSec": 4,
+      "angerBoost": 0.18
+    },
+    "run": {
+      "startSpeed": 13,
+      "maxSpeed": 27,
+      "accel": 0.22,
+      "startGap": 24,
+      "escapeGap": 70,
+      "catchGap": 1.6,
+      "kirillSlip": 0.08,
+      "stumbleSec": 0.8,
+      "boostSec": 3,
+      "boostMul": 1.4,
+      "chaosMax": 12,
+      "boostCost": 6,
+      "trapCost": 3,
+      "trapAhead": 9,
+      "trapHit": 0.42,
+      "nerveTrap": 17,
+      "nerveSlip": 6,
+      "nerveMail": 12,
+      "exam": 1500,
+      "examStory": 1000,
+      "emailCharges": 3,
+      "emailStun": 1.6
+    },
+    "drone": {
+      "bpm": 100,
+      "length": 70,
+      "storyLength": 55,
+      "perfect": 2.3,
+      "good": 1.5,
+      "hold": 4.5,
+      "miss": 4,
+      "decay": 2.6,
+      "slapEvery": 7,
+      "slapHit": 14,
+      "slapDodge": 1,
+      "coffeeEvery": 16,
+      "coffeeWin": 12,
+      "coffeeLose": 22
+    },
+    "show": {
+      "slides": 8,
+      "slideSec": 3.2,
+      "faceRadius": 0.09,
+      "flashCd": 2.2,
+      "flashDmg": 14,
+      "laserFace": 18,
+      "laserSlide": 12,
+      "ringCd": 11,
+      "ringDmg": 26,
+      "regen": 12,
+      "afterMelt": 90,
+      "meltSec": 2.2,
+      "strikes": 3,
+      "warnSec": 1.0,
+      "lookSec": [1.6, 2.6],
+      "lookGap": [2.6, 5.2],
+      "bothChance": 0.2,
+      "hackCd": 13,
+      "memeSec": 3.5,
+      "memeDmg": 30,
+      "laughSec": 2.2,
+      "bangWindow": 1.0,
+      "bangMul": 2,
+      "shadesSec": 6,
+      "accuseCd": 8,
+      "accuseSec": 2.2,
+      "breathCd": 15,
+      "breath": 25,
+      "readPace": 0.65
+    },
+    "dungeon": {
+      "roomW": 22,
+      "roomH": 14,
+      "playerHp": 130,
+      "speed": 6.5,
+      "dashCd": 1.2,
+      "ringCd": 6,
+      "ringDmg": 25,
+      "ringRadius": 3.6,
+      "hitDmg": 12,
+      "hitRange": 1.9,
+      "hitCd": 0.35,
+      "bossHp": 320
+    }
+  },
+  "interlude": {
+    "winStress": 8,
+    "loseStress": 2,
+    "tired": { "sanity": 0.82, "speed": 0.9 },
+    "fired": { "sanity": 1.12, "speed": 1.06 }
+  },
+  "director": {
+    "firstEvent": 12,
+    "every": [16, 21],
+    "momStun": 2.5,
+    "paperworkChaos": 20,
+    "taunt": [9, 14],
+    "walkers": 4
+  }
+}
